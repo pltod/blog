@@ -1,0 +1,1029 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>JavaScript The Learning Roadmap - JavaScript Applications</title>
+
+		<meta name="description" content="Presentation based on DevReach 2012 lectures and some additions from the author">
+		<meta name="author" content="pltod">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/default.css" id="theme">
+
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- If the query includes 'print-pdf', use the PDF print sheet -->
+		<script>
+			document.write( '<link rel="stylesheet" href="../css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+		<div class="meny">
+			<h1>CONTENT</h1>
+			<ul>
+				<li><a href="">1. WEB APPLICATIONS</a></li>
+				<li><a href="">2. MOBILE APPLICATIONS</a></li>
+				<li><a href="">3. DESKTOP APPLICATIONS</a></li>
+				<li><a href="">4. CONCLUSIONS</a></li>
+			</ul>
+		</div>
+		<div class="meny-arrow"></div>
+		<div class="reveal contents">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section data-markdown>
+					<script type="text/template">
+						# JavaScript Applications
+						### Thoughts on DevReach 2012
+						 
+						<small>by Plamen Todorov</small>
+						 
+						<small><a href="http://twitter.com/pltod">@pltod</a></small>
+					</script>
+				</section>
+				<section data-markdown>
+					<script type="text/template">
+						## PURPOSE
+						- Let you know what has been discussed at <br/> DevReach 2012
+						<br/>
+						<br/>
+						- Initiate a discussion about the future of <br/> application development
+					</script>
+				</section>
+				<section data-markdown>
+					<script type="text/template">
+						## DevReach 2012 - Lectures Covered
+						- Hybrid HTML5 App Plumbing: How do they do it?
+						<br/>
+						<br/>
+						- Developing Windows 8 Style Application With HTML5 and JavaScript
+						<br/>
+						<br/>
+						- Building Multiplatform Apps with HTML5, JavaScript, and Phone Gap Build
+					</script>
+				</section>
+				<section data-markdown>
+					<script type="text/template">
+						## DevReach 2012 - Lectures Covered
+						- Web Application Architecture: Lessons Learned From Adobe Brackets
+						<br/>
+						<br/>
+						- Using HTML5 to build mobile Apps
+						<br/>
+						<br/>
+						- The Web is Native
+					</script>
+				</section>
+				<!-- HISTORY SECTIONS -->
+				<section>
+					<section data-markdown>
+						<script type="text/template">
+							# WEB APPLICATIONS
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							## WHICH ARE THE MAJOR DRIVERS FOR TECHNOLOGY TREND CHANGES?
+						</script>
+					</section>
+					<section data-markdown data-state="alert">
+						<script type="text/template">
+							## 2 major drivers
+							- Consumer - Provider Relationship
+							<br/><br/>
+							- Provider - Provider Relationship
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							## CONSUMER - PROVIDER
+							- any demand is satisfied by a provider
+							- demands are created by providers ('this is cool you must have it')
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							## PROVIDER - PROVIDER
+							- so called provider 'wars' for gainning market share
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							## PROVIDERS NEEDS THAT REFLECT TECHNOLOGY TRENDS
+							- Solutions must be
+								- delivered faster
+								- developed with less resources
+								- the used knowledge must be reusable
+						</script>
+					</section>
+					<section data-markdown data-state="alert">
+						<script type="text/template">
+							## THE HISTORY OF 'WWW' REVEAL THE CONSUMER NEEDS DURING THE YEARS
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							## The Web as Document Environment*
+							- The consumers need to share documents
+							<br/><br/>
+							- The companies provide HTML docs and links between them
+							<br/><br/>
+							<small>*Source: [Real-Time Collaboration Support for JavaScript Frameworks][]</small>
+							[Real-Time Collaboration Support for JavaScript Frameworks]: http://www.rn.inf.tu-dresden.de/uploads/Studentische_Arbeiten/Belegarbeit_Grueneberger_Franz%20Josef.pdf
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							## The Web as Application Environment*
+							- The consumers need more dynamic content that looks like application
+							<br/><br/>
+							- The companies
+								- makes documents richer
+								- provides the possibility of changing only the part of the doc
+							<br/><br/>
+							<small>*Source: [Real-Time Collaboration Support for JavaScript Frameworks][]</small>
+							[Real-Time Collaboration Support for JavaScript Frameworks]: http://www.rn.inf.tu-dresden.de/uploads/Studentische_Arbeiten/Belegarbeit_Grueneberger_Franz%20Josef.pdf
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							## The Web as Desktop-Like Environment*
+							- There is no new consumer needs
+							- Companies innovate and prove that web applications could be even richer and developed in standard way
+							<br/><br/>
+							<small>*Source: [Real-Time Collaboration Support for JavaScript Frameworks][]</small>	
+							[Real-Time Collaboration Support for JavaScript Frameworks]: http://www.rn.inf.tu-dresden.de/uploads/Studentische_Arbeiten/Belegarbeit_Grueneberger_Franz%20Josef.pdf
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							## CONTEMPORARY WEB APPS
+							- Easy to use and intuitive (LESS IS MORE)
+							<br/><br/>
+							- Responsive in terms of speed - reducing server calls with extensive client-side logic
+							<br/><br/>
+							- Responsive in terms of design - support multiple screen sizes
+							<br/><br/>
+							- Must allow real-time collaboration
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							## CONTEMPORARY WEB APPS
+							- Offline mode
+							<br/><br/>
+							- Data integration between applications (via Public API)
+							<br/><br/>
+							- Real-time synchronization - know about the changes on the server ASAP (example at [meteor.com screencast] [] funded $11.2 million)
+							[meteor.com screencast]: http://www.meteor.com/authcast
+							<br/><br/>
+							- Richer applications - 3D graphics and multimedia
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							## HOW TRADITIONAL FAT APPS FIT THIS PICTURE?
+							- Easy to use and intuitive - DEPENDS ON THE APP
+							<br/><br/>
+							- Responsive in terms of speed - usually YES (offline by default)
+							<br/><br/>
+							- Suitable for different screen sizes- YES or NO?
+							<br/><br/>
+							- Must allow real-time collaboration - NO
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							## HOW TRADITIONAL FAT APPS FIT THIS PICTURE?
+							- Offline mode - YES by default
+							<br/><br/>
+							- Data integration between applications - IS THERE AN EASY WAY?!
+							<br/><br/>
+							- Real-time synchronization - NOT RELEVANT?! (usually work with local storage)
+							<br/><br/>
+							- Richer applications - YES
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							## WHY TRADITIONAL FAT APPS ARE NOT SUFFICIENT?
+							- Distribution model is not scalable (limited market size)
+							<br/><br/>
+							- Can not be used collaboratevly
+							<br/><br/>
+							- Can not be easily integrated (via Public API)
+							<br/><br/>
+							- Can not benefit from the Cloud (may be not needed but still no scalability on demand)
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							### TRADITIONAL FAT APPS KEPT THEIR POSITIONS LONGER THAN EXPECTED BECAUSE PROGRAMMERS UNDERVALUE WEB APPLICATIONS
+						</script>
+					</section>
+					<section data-markdown data-state="alert">
+						<script type="text/template">
+							### WEB APPLICATIONS ARE ENTERPRISE APPLICATIONS!
+							#### The main differences stems from the difference in the distribution channel.
+							#### SO DO NOT UNDERVALUE THEM!
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							## ENTERPRISE APPLICATIONS BY FOWLER*
+							- Enterprise applications usually involve persistent data
+							- There's usually a lot of data
+							- Usually many people access data concurrently
+							- With so much data, there's usually a lot of user interface screens to handle it
+							- Usually they need to integrate with other enterprise applications
+							<br/><br/>
+							<small>*Source: [Patterns Of Enterprise Application Architecture][]</small>	
+							[Patterns Of Enterprise Application Architecture]: http://www.amazon.com/Patterns-Enterprise-Application-Architecture-Martin/dp/0321127420/ref=sr_1_wsc1?ie=UTF8&qid=1354592110&sr=8-1-wordsplitter&keywords=PatternsOfEnterpriseApplicationArchitecture
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							## WEB APP TYPES BASED ON DOMAIN*
+							- Information Management (all kinds of enteprise apps like scheduling, process and contact management)
+							<br/><br/>
+							- Computer aided software engineering (project management tools)
+							<br/><br/>
+							- Office (e-mail, word processing)
+							<br/><br/>
+							- Graphics and Multimedia
+							<br/><br/>
+							- Visualization
+							<br/><br/>
+							<small>*Source: [Real-Time Collaboration Support for JavaScript Frameworks][]</small>
+							[Real-Time Collaboration Support for JavaScript Frameworks]: http://www.rn.inf.tu-dresden.de/uploads/Studentische_Arbeiten/Belegarbeit_Grueneberger_Franz%20Josef.pdf
+						</script>
+					</section>				
+					<section data-markdown data-state="alert">
+						<script type="text/template">
+							### FULLFILL THOSE REQUIREMENTS THAT ARE RELEVANT FOR YOUR APPLICATION TYPE
+							#### EXAMPLE: IF 'OFFLINE MODE' IS NOT APPROPRIATE FOR YOUR APP TYPE DO NOT DO IT!
+						</script>
+					</section>
+					<section data-markdown data-state="alert">
+						<script type="text/template">
+							### MOVING FROM WEB SITES AND TRADITIONAL FAT APPS TO WEB APPLICATIONS AFFECTS APPLICATION DEVELOPMENT (Technology Stacks)
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							## 1993
+							- Client: HTML
+							<br/><br/>
+							- Server: C++ or Perl
+							<br/><br/>
+							<small>Source: [Previous Web Architectures][]</small>
+							[Previous Web Architectures]: http://paulhammant.com/2012/02/06/previous-web-architectures/
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							## 2000
+							- Client: HTML, CSS, and JS (for simple taks)
+							<br/><br/>
+							- Rich Client: ActiveX, or Java Applets, or Flash (all of these require plugins)
+							<br/><br/>
+							- Server: Servlets + JSP, PHP, Struts
+							<br/><br/>
+							- Server Patterns: MVC
+							<br/><br/>
+							<small>Source: [Previous Web Architectures][]</small>
+							[Previous Web Architectures]: http://paulhammant.com/2012/02/06/previous-web-architectures/
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							## 2007
+							- Client: HTML, CSS, JS for AJAX (MooTools, Dojo, YUI, Prototype, jQuery)
+							<br/><br/>
+							- Rich Client (RIA): Java FX, Silverlight, Adobe AIR
+							<br/><br/>
+							- Server: ASP.Net, Spring MVC, Rails(for Ruby)
+							<br/><br/>
+							- Server Patterns: MVP, Post/Redirect/Get, REST, very early Commet (pushing data from server to client)
+							<br/><br/>
+							<small>Source: [Previous Web Architectures][]</small>
+							[Previous Web Architectures]: http://paulhammant.com/2012/02/06/previous-web-architectures/
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							## 2012
+							- Client: HTML, CSS, JS for Client-Side code organization (MV* JS Frameworks - see [Todo MVC] [])
+							<br/><br/>
+							- Server: Node.js (for JavaScript), Grails(for Groovy), Lift (for Scala), Play (for Scala and Java)
+							<br/><br/>
+							<small>Source: [Web App Model Quandary][]</small>
+							[Web App Model Quandary]: http://paulhammant.com/2012/02/06/webapp-model-quandary/
+							[Todo MVC]: http://addyosmani.github.com/todomvc/
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							## WEB APPLICATION TYPES BASED ON IMPLEMENTATION TECHNOLOGY
+							- Client Side
+								- Pure JavaScript, plug-in free
+								- Compiled to JavaScript, plug-in free - CoffeScript, or GWT, or Dart, or TypeScript
+								- RIA, plug-in based - Java FX, Silverlight, AIR
+							<br/><br/>
+							- Server Side
+								- ASP.Net, JSF, Spring MVC, Rails, Groovy, Play, Lift, PHP
+								- ...and now JavaScript with Node.js
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							## WHY SERVER-SIDE JAVASCRIPT COULD BE A GOOD CHOICE?
+							- Single language in the whole stack - minimize development costs
+							<br/><br/>
+							- Suitable for most requirements - "perfect for data-intensive real-time applications that run across distributed devices"
+							<br/><br/>
+							- Node.js is faster than multithreaded container for IO-bound operations (carefull with CPU-bound apps)
+							<br/><br/>
+							- Native integration with NoSQL databases - easy polyglot persistence
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							## WHY 'HTML5' AND 'JAVASCRIPT' WERE THE 'STARS' AT MICROSOFT'S CONFERENCE?
+						</script>
+					</section>	
+					<section data-markdown data-state="alert">
+						<script type="text/template" data-state="alert">
+							### CLIENT-SIDE IS MORE IMPORTANT THAN EVER
+							### JAVASCRIPT IS THE ONLY OPTION ON THE CLIENT-SIDE
+							### HTML5, AJAX, COMMET IS ALL ABOUT JAVASCRIPT
+							### SOME NOSQL DB IS ALL ABOUT JAVASCRIPT
+							### JAVASCRIPT IS A VIABLE OPTION ON THE SERVER-SIDE
+						</script>
+					</section>
+					<section data-markdown data-state="alert">
+						<script type="text/template">
+							## LAST BUT NOT LEAST
+							### JAVASCRIPT IS NOW AN OPTION FOR
+							### MOBILE AND DESKTOP APPLICATIONS
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							## DEVREACH 2012
+							### Brian Rinaldi, 'Web Application Architecture: Lessons Learned From Adobe Brackets'
+							- BUILT WITH STANDARD TECHNOLOGIES
+							- REQUIRE.JS
+							- GRUNT
+							- BACKBONE.JS
+							- HANDLEBARS
+							- ETC.
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							## C9 IDE
+							- BUILD WITH JS STACK, RUN ON NODE.JS
+							- COLLABORATION BETWEEN MORE THAN 30 DEVELOPERS
+							- RICH INTERFACE
+							- INTEGRATION WITH THIRD PARTY API (GITHUB)
+							- PAAS
+							- OPEN SOURCE SOFTWARE
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							## WHY DO WE MOVE FROM PLUG-IN BASED RIA TO HTML5 DESKTOP-LIKE APPS?
+							<img src="img/webstages.png">
+						</script>
+					</section>				
+					<section data-markdown>
+						<script type="text/template">
+							## PLUG-IN BASED RIA INCONVENIENCES
+							- Require plug-in installation and updates.
+							- Indexing and SEO?!
+							- Can not be easily integrated (via Public API)?!
+							<br/><br/>
+							- Now the browsers has the same capabilities via HTML5
+						</script>
+					</section>
+					<section data-markdown data-state="alert">
+						<script type="text/template">
+							### PLUG-IN BASED RIA ARE NOT CONVENIENT FOR PROVIDERS RATHER THAN CONSUMERS
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							## ENTERING THE POWER GAMES
+							<blockquote>
+								We know from painful experience that letting a third party layer of software come between the platform and the developer 
+								ultimately results in sub-standard apps and hinders the enhancement and progress of the platform.
+							</blockquote>
+							<br/><br/>
+							[Steve Jobs - Thoughts On Flash] []
+							[Steve Jobs - Thoughts On Flash]: http://www.apple.com/hotnews/thoughts-on-flash/
+						</script>
+					</section>
+					<section data-markdown data-state="alert">
+						<script type="text/template">
+							## 'third party software' is sensitive topic in a world of mobiles
+							## Since when mobiles become so important?
+						</script>
+					</section>
+				</section>	
+				<section>
+					<section data-markdown>
+						<script type="text/template">
+							# MOBILE APPLICATIONS
+						</script>
+					</section>				
+					<section data-markdown>
+						<script type="text/template">
+							## MOBILE INTERNET VS. DESKTOP INTERNET
+							<br/>
+							<img src="img/mobileInternet.png">
+							<small>Source: [Mobile Marketing Statistics 2012][]</small>
+							[Mobile Marketing Statistics 2012]: http://www.smartinsights.com/mobile-marketing/mobile-marketing-analytics/mobile-marketing-statistics/
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							## MOBILE APPLICATIONS CLASSIFICATION
+						</script>
+					</section>				
+					<section data-markdown>
+						<script type="text/template">
+							## Browser-Based Apps
+							###(a.k.a. Mobile Web, Mobile Site)
+							<br/><br/>
+							developed with HTML5/JS and Responsive Web Design
+							<br/><br/>
+							rendered by the browser engine of the used browser
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							## NATIVE APPLICATIONS
+							<br/><br/>
+							developed with the device SDK and language
+							<br/><br/>
+							rendered by built-in browser engine (WebKit on major devices)
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							## HYBRID APPLICATIONS
+							<br/><br/>
+							developed with HTML5/JS embedded in thin native container
+							<br/><br/>
+							rendered by built-in browser engine (WebKit on major devices)
+						</script>
+					</section>		
+					<section data-markdown>
+						<script type="text/template">
+							## MOBILE APPLICATIONS CLASSIFICATION
+							<br/><br/>
+							<img src="img/hybridNative.png">
+							<small>[Native, HTML5, or Hybrid: Understanding Your Mobile Application Development Options][]</small>
+							[Native, HTML5, or Hybrid: Understanding Your Mobile Application Development Options]: http://wiki.developerforce.com/page/Native,_HTML5,_or_Hybrid:_Understanding_Your_Mobile_Application_Development_Options
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							## Frames of Interaction
+							- Frame 1: the application itself
+							<br/>
+							<img src="img/calc.jpg">
+							<small>Source: [Apps vs the Web][]</small>
+							[Apps vs the Web]: http://mattgemmell.com/2011/07/22/apps-vs-the-web/
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							## Frames of Interaction
+							Frame 1: the application itself, Frame 2: the device
+							<br/>
+							<img src="img/nativeApp.jpg">
+							<small>Source: [Apps vs the Web][]</small>
+							[Apps vs the Web]: http://mattgemmell.com/2011/07/22/apps-vs-the-web/
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							## Frames of Interaction
+							Frame 1: the application itself, Frame 2: the browser, Frame 3: the device
+							<br/>
+							<img src="img/webApp.jpg">
+							<small>Source: [Apps vs the Web][]</small>
+							[Apps vs the Web]: http://mattgemmell.com/2011/07/22/apps-vs-the-web/
+						</script>
+					</section>
+					<section data-markdown data-state="alert">
+						<script type="text/template">
+							## HYBRID APPS ARE OF MOST INTEREST
+							<br/>
+							### HAVE ACCESS TO DEVICE NATIVE API
+							### DEVELOPED WITH STANDARD TECHNOLOGIES
+							### 2 FRAMES OF INTERACTION - THE APP AND THE DEVICE - JUST LIKE NATIVE APPS
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							## How Hybrid Applications Work?
+							- Hybrid apps use a 'Web View Control' (this is a class from the platform API that allows to embed web content)
+								- UIWebView on iOS
+								- WebView for Android
+								- WebBrowser for Windows
+							<br/><br/>
+							- The 'Web View Control' use native browser rendering engine instead of the engine of some of the installed browsers on the device
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							## How To Develop Hybrid Apps?
+							- Way 1: If you know the platform API and how to use 'Web View Control' you can manually embed your app developed with standard technologies
+							<br/><br/>
+							- Way 2: If you don't know the platform API you can use an ABSTRACTION LAYER on top of the native API
+						</script>
+					</section>
+					<section data-markdown data-state="alert">
+						<script type="text/template">
+							## WAY 1 BENEFITS - SKILL REUSE
+							## WAY 2 BENEFITS (ABSTRACTION LAYERS) - SKILL REUSE AND CROSS-PLATFORM
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							## WHY CROSS PLATFORM MOBILE DEVELOPMENT IS A HOT TOPIC?
+							<li class="fragment">[Have you heard about Jolla Sailsfish?][]</li>
+							<li class="fragment">Imagine it has a market share of 30% after 3 years</li>
+							<br/><br/>
+							<li class="fragment">Then all your investments in educating employees, buying licenses, etc. in a 'Mobile OS' that is outcompeted by Jolla are gone</li>
+							[Have you heard about Jolla Sailsfish?]: http://www.engadget.com/2012/11/21/jolla-shows-off-sailfish-mobile-os-to-finnish-tv-station/
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							## CURRENT PLAYERS IN CROSS PLATFORM MOBILE DEVELOPMENT
+							- [Adobe PhoneGap][] a.k.a. Apache Cordova
+							- [Icenium by Telerik][]
+							- [Titanium by Appcelerator][]
+							[Adobe PhoneGap]: http://www.phonegap.com/
+							[Icenium by Telerik]: http://www.icenium.com/
+							[Titanium by Appcelerator]: http://www.appcelerator.com/platform/titanium-sdk
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							## How these tools actually work?
+							- Via API that is basically an abstraction layer
+							- The abstraction layer translates invocations to native code of the target platform
+						</script>
+					</section>					
+					<section data-markdown data-state="alert">
+						<script type="text/template">
+							## GUESS WHAT? +1 for JavaScript
+							### ALL KNOWN ABSTRACTION LAYERS ARE JS API :)
+							### WHICH MEANS YOU CAN USE JS TO BUILD CROSS PLATFORM HYBRID MOBILE APPLICATIONS
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							## Example
+							- Note that these APIs are used for accessing native features like camera, contacts, accelerometer etc.
+							
+							```javascript
+							navigator.camera.getPicture (
+								onCameraSuccess,
+								onCameraError,
+								{
+									quality: 50,
+									destinationType: Camera.DestinationType.DATA_URL
+								}
+							);
+							function onCameraSuccess (imageData) {
+								var image = document.getElementById('myImage');
+								image.src = "data:image/jpeg;base64," + imageData;
+							}
+							function onCameraError (message) {
+								alert('Failed because: ' + message);
+							}
+							```
+							<small>Source: [What is a Hybrid Mobile App?][]</small>
+							[What is a Hybrid Mobile App?]: http://icenium.com/community/blog/icenium-team-blog/2012/06/14/what-is-a-hybrid-mobile-app-
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							## Example: PhoneGap Features
+							<img src="img/phoneGapFeatures.png">
+						</script>
+					</section>
+					<section data-markdown data-state="alert">
+						<script type="text/template">
+							### CROSS PLATFORM TOOLS ARE FOR NATIVE FEATURES LIKE CAMERA
+							### YOU NEED ONE MORE INGREDIENT TO ACHIEVE NATIVE UI LOOK AND FEEL
+							### THIS INGREDIENT IS A JAVASCRIPT :) MOBILE FRAMEWROK
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							## What are JavaScript Mobile Frameworks?
+							- These are set of widgets, layouts, themes and UI effects
+							- Write once and get native UI look and feel for many platforms
+							- Short list:
+								- [jQuery Mobile] []
+								- [Zepto] []
+								- [Sencha Touch] []
+								- [Kendo UI Mobile] []
+							[jQuery Mobile]: http://jquerymobile.com/
+							[Zepto]: http://zeptojs.com/
+							[Sencha Touch]: http://www.sencha.com/products/touch/
+							[Kendo UI Mobile]: http://www.kendoui.com/mobile.aspx
+						</script>
+					</section>
+					<section data-markdown data-state="alert">
+						<script type="text/template">
+							## STILL NATIVE APPS > HYBRID APPS
+							### Hybrid Apps NOT SUITABLE IF YOU NEED ADVANCED GRAPHIC PERFORMANCE
+							### THE ABSTRACTION LAYER USED BY Hybrid Apps MAY NOT COVER THE LATEST NATIVE API
+							#### IF YOU HAVE RESOURCES AND A NEED BUILD A NATIVE APP (THE FACEBOOK CASE)
+						</script>
+					</section>
+					<section data-markdown data-state="alert">
+						<script type="text/template">
+							## Cross platform development
+							### Make a difference between the two phases
+							### development and build/packaging
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							## Build/packaging phase
+							- You must have PhoneGap application shells for each platform
+							- You must setup different IDEs (xCode or Eclipse)
+							- (And if you're on Windows) You've got to get a Mac to build apps for iOS
+							<br/><br/>
+							<small>Source: [Icenium + Kendo UI = Awesome][]</small>
+							[Icenium + Kendo UI = Awesome]: http://www.kendoui.com/blogs/teamblog/posts/12-10-22/icenium_kendo_ui_awesome.aspx
+						</script>
+					</section>
+					<section data-markdown data-state="alert">
+						<script type="text/template">
+							## Cloud to the rescue
+							- Phone Gap Build
+							- Icenium Integrated Cloud Environment
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							## DEVREACH 2012
+							### John Flanders, 'Hybrid HTML5 App Plumbing: How do they do it?'
+							- DEMONSTRATED DIRECT COMMUNICATION BETWEEN JAVASCRIPT AND PLATFORM'S API ('Web View Control')
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							## DEVREACH 2012
+							### Todd Anglin, 'Using HTML5 to build mobile Apps'
+							- MOBILE APPLICATIONS TYPES
+							- PROS AND CONS FOR DIFFERENT TYPES
+							- DEMONSTRATED KENDO UI MOBILE FOR HYBRID APPLICATIONS
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							## DEVREACH 2012
+							### Brian Rinaldi, 'Building Multiplatform Apps with HTML5, JavaScript, and Phone Gap Build'
+							- DEMONSTRATED PHONE GAP BUILD
+						</script>
+					</section>
+				</section>
+			<section>
+				<section data-markdown>
+					<script type="text/template">
+						# DESKTOP APPLICATIONS 
+						# STRIKES BACK
+					</script>
+				</section>
+				<section data-markdown>
+					<script type="text/template">
+						## APP DEVELOPMENT CONVERGENCE
+						## WHAT IS ALL ABOUT?
+						- Desktop, mobile and web development go in a similar direction
+						<br/><br/>
+						- Lets take a look on three cases
+							- The Microsoft Case
+							- The Google Case
+							- The Mozilla Case
+					</script>
+				</section>
+				<section data-markdown>
+					<script type="text/template">
+						## MICROSOFT WINDOWS 8 FACTS
+						- New runtime called WinRT
+						<br/><br/>
+						- WinRT can be accessed via JavaScript abstraction layer called WinJS 
+							- similar to PhoneGap and a Mobile OS
+							- the difference is that the abstraction layer is provided by platform provider not third party company
+					</script>
+				</section>
+				<section data-markdown>
+					<script type="text/template">
+						## MICROSOFT WINDOWS 8 ARCHITECTURE
+						<img src="img/windows8.png">
+					</script>
+				</section>
+				<section data-markdown>
+					<script type="text/template">
+						## BOTTOM LINE - A BOOK WITH 833 PAGES :)
+						<img src="img/msBook.png" style="width: 600px; height: 600px;">
+						[GET IT FOR FREE!][]
+						[GET IT FOR FREE!]: http://blogs.msdn.com/b/microsoft_press/archive/2012/10/29/free-ebook-programming-windows-8-apps-with-html-css-and-javascript.aspx
+					</script>
+				</section>
+				<section data-markdown data-state="alert">
+					<script type="text/template">
+						## WINDOWS 8 DESKTOP DEVELOPMENT BECOMES THE SAME AS MOBILE DEVELOPMENT
+						### DEVELOP WITH STANDARD TECHNOLOGIES
+						### DISTRIBUTE VIA STORE (WINDOWS STORE)
+					</script>
+				</section>
+				<section data-markdown>
+					<script type="text/template">
+						## MICROSOFT WINDOWS PHONE 8 ARCHITECTURE
+						- The mobile platform still has no native support for standard technologies.
+						- So one still need to use PhoneGap for this platform.
+						<br/><br/>
+						<img src="img/w8Phone.png">
+					</script>
+				</section>
+				<section data-markdown>
+					<script type="text/template">
+						## CONVERGENCE NOT COMPLETED
+						- Both runtimes have common parts but still some desktop applications can not be run on Windows Phone 8 out of the box
+						- I guess this will be changed soon so don't buy Windows Phone 8 yet :)
+						<br/><br/>
+						<img src="img/msConvergence.png">
+					</script>
+				</section>
+				<section data-markdown>
+					<script type="text/template">
+						## THE CONSEQUENCES OF MAKING
+						## JavaScript 'FIRST CLASS CITIZEN'
+						- Attract more developers for Windows platform
+						- IE 10: very fast, standards compliant, closely integrated with Windows 8 OS
+						<br/><br/>
+						- This is a problem for guests browsers like Chrome and Firefox. 
+						- Probably they will loose some market share among the Windows users
+						- Have you seen someone to use Chrome on Mac OS???
+					</script>
+				</section>
+				<section data-markdown>
+					<script type="text/template">
+						## DEVREACH 2012
+						### Lino Tadros, 'Developing Windows 8 Style Application With HTML5 and JavaScript'
+						- TALKED EXTENSIVELLY ABOUT NEW THINGS IN WINDOWS 8
+						- TALKED ABOUT STRICT POLICY OF PUBLISHING IN WINDOWS STORE
+					</script>
+				</section>
+				<section data-markdown>
+					<script type="text/template">
+						## THE GOOGLE RESPONSE
+						#### [Google Packaged Apps Against Windows 8 Store]
+						<br/><br/>
+						[Google Packaged Apps Against Windows 8 Store]: http://www.conceivablytech.com/10265/business/google-places-packaged-apps-against-windows-8-store
+					</script>
+				</section>
+				<section data-markdown>
+					<script type="text/template">
+						## WHAT IS GOOGLE PACKAGED APP?
+						<blockquote>
+							Google removes the emphasis of the importance of the browser and enables developers to create apps that look and feel like a native application without the obvious need to run the browser first						
+						</blockquote>
+						<br/><br/>
+						Well known strategy: Google sees that Chrome could be irrelevant in Windows 8 and they make it irrelevant themselves.
+						<br/><br/>
+						<small>Source: [Google Places Packaged Apps Against Windows 8 Store][]</small>
+						[Google Places Packaged Apps Against Windows 8 Store]: http://www.conceivablytech.com/10265/business/google-places-packaged-apps-against-windows-8-store
+					</script>
+				</section>
+				<section data-markdown>
+					<script type="text/template">
+						## GUESS WHO WINS OUT OF THE COMPETITION BETWEEN COMPANIES?
+						<p class="fragment"> + 1 FOR THE STANDARD TECHNOLOGIES - HTML5, CSS3, and JAVASCRIPT :)</p>
+					</script>
+				</section>
+				<section data-markdown>
+					<script type="text/template">
+						## GOOGLE PACKAGED APPS CHARACTERISTICS
+						- Developed with HTML5, CSS3, and JavaScript
+						<br/><br/>
+						- Work offline
+						<br/><br/>
+						- Do not run inside a browser but in application container
+						<br/><br/>
+						- Security model based on HTML5 content security policy
+					</script>
+				</section>
+				<section data-markdown>
+					<script type="text/template">
+						## GOOGLE PACKAGED APPS CHARACTERISTICS
+						- Capable of accessing native host OS resources like file system, camera, mic etc.
+						<br/><br/>
+						- Have lifecycle phases - Installation, Startup, Termination, Update, Uninstallation(Complete)
+						<br/><br/>
+						- Distributed via Chrome Web Store 
+					</script>
+				</section>
+				<section data-markdown>
+					<script type="text/template">
+						## GOOGLE PACKAGED APPS SCENARIO
+						- You have a pretty nice Windows 8 with IE10 or Mac OS X with Safari
+						<br/><br/>
+						- You like your OS and there is no chance to install Chrome or another third party browser
+						<br/><br/>
+						- However, you hear about 'Cut The Rope' game that can be found on Chrome Web Store
+						<br/><br/>
+						- It is actually a Google Packaged App so you are one click away from installing it and use it like a native application
+					</script>
+				</section>
+				<section data-markdown data-state="alert">
+					<script type="text/template">
+						## GOOGLE PACKAGED APPS BOTTOM LINE
+						<blockquote>With Google Packaged Apps, HTML and JavaScript can be used to create apps that rival native apps on any platform- Mac, Windows, and Linux. Packaged Apps give your JavaScript access to premium APIs not available to traditional websites, and the ability to run apps completely free from the browser.
+						</blockquote>
+						<br/><br/>
+						<small>Source: [Break Out Of The Browser][]</small>
+						[Break Out Of The Browser]: http://www.kendoui.com/chrome.aspx
+					</script>
+				</section>		
+				<section data-markdown>
+					<script type="text/template">
+						## GOOGLE PACKAGED APPS RESOURCES
+						- [Google Packaged Apps][]
+						- [Packaged App Bootstrap][]
+						- [Kendo UI + Google Packaged Apps][]
+						[Google Packaged Apps]: http://developer.chrome.com/apps/about_apps.html
+						[Packaged App Bootstrap]: https://github.com/burkeholland/packaged-app-bootstrap
+						[Kendo UI + Google Packaged Apps]: http://www.kendoui.com/chrome.aspx
+					</script>
+				</section>
+				<section data-markdown>
+					<script type="text/template">
+						## DEVREACH 2012
+						### Burke Holland, 'The Web Is Native'
+						- PRESENTED GOOGLE PACKAGED APPS
+						- DEMONSTRATED HIS [Packaged App Bootstrap][]
+						[Packaged App Bootstrap]: https://github.com/burkeholland/packaged-app-bootstrap
+					</script>
+				</section>
+				<section data-markdown>
+					<script type="text/template">
+						## THE IMPORTANCE OF ABSTRACTION LAYER
+						- PhoneGap is abstraction layer for several Mobile OS
+						<br/><br/>
+						- WinJS is abstraction layer for desktop Windows 8 OS
+						<br/><br/>
+						- Google Packaged Apps is abstraction layer for several desktop OS
+						<br/><br/>
+						### WITH ABSTRACTION LAYER WE ACHIEVE DEVELOPMENT WITH STANDARD TECHOLOGIES
+					</script>
+				</section>
+				<section data-markdown>
+					<script type="text/template">
+						## MOZILLA FIREFOX OS - NO NEED OF ABSTRACTION LAYERS ANYMORE
+						- OS for smartphones and tablets that will appear in 2013
+						<br/><br/>
+						- The OS itself and its features calling, messaging, calendar, etc. are built with HTML5
+						<br/><br/>
+						- So there is no need from abstraction layer to build apps with these technologies
+						<br/><br/>
+						- Apps will be distributed via Firefox Marketplace
+					</script>
+				</section>
+				<section data-markdown data-state="alert">
+					<script type="text/template">
+						## HOW FAR HTML5/JS CAN REACH?
+						## END...
+					</script>
+				</section>
+			</section>
+			<section>
+				<section data-markdown>
+					<script type="text/template">
+						# CONCLUSIONS 
+					</script>
+				</section>			
+				<section data-markdown>
+					<script type="text/template">
+						## NOT ALWAYS THE BEST TECH BECOMES MAINSTREAM TECH 
+					</script>
+				</section>			
+				<section data-markdown>
+					<script type="text/template">
+						## IT IS VERY HARD TO IMAGINE THAT THE DIRECTION WILL CHANGE DRAMATICALLY IN THE NEAR FUTURE (2021) 
+					</script>
+				</section>			
+				<section data-markdown>
+					<script type="text/template">
+						## FOCUS ON THREE MAJOR AREAS
+						#### JAVASCRIPT STACK FOR IO INTENSIVE BUSINESS APPS
+						#### NO SQL DATABASES TO ACHIEVE POLYGLOT PERSISTENCE
+						#### MULTICORE PROGRAMMING FOR CPU INTENSIVE APPS
+					</script>
+				</section>			
+				<section data-markdown>
+					<script type="text/template">
+						# THANK YOU!
+					</script>
+				</section>			
+			</section>
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+		<script src="js/meny.min.js"></script>
+		<script>
+			// Create an instance of Meny
+			var meny = Meny.create({
+				// The element that will be animated in from off screen
+				menuElement: document.querySelector( '.meny' ),
+
+				// The contents that gets pushed aside while Meny is active
+				contentsElement: document.querySelector( '.contents' ),
+
+				// [optional] The alignment of the menu (top/right/bottom/left)
+				position: Meny.getQuery().p || 'left',
+
+				// [optional] The height of the menu (when using top/bottom position)
+				height: 200,
+
+				// [optional] The width of the menu (when using left/right position)
+				width: 560,
+
+				// [optional] Distance from mouse (in pixels) when menu should open
+				threshold: 40
+			});
+
+			// API Methods:
+			// meny.open();
+			// meny.close();
+			// meny.isOpen();
+			
+			// Events:
+			// meny.addEventListener( 'open', function(){ console.log( 'open' ); } );
+			// meny.addEventListener( 'close', function(){ console.log( 'close' ); } );
+
+			// Embed an iframe if a URL is passed in
+			if( Meny.getQuery().u && Meny.getQuery().u.match( /^http/gi ) ) {
+				var contents = document.querySelector( '.contents' );
+				contents.style.padding = '0px';
+				contents.innerHTML = '<div class="cover"></div><iframe src="'+ Meny.getQuery().u +'" style="width: 100%; height: 100%; border: 0; position: absolute;"></iframe>';
+			}
+		</script>
+
+
+		<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/none
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/showdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+					// { src: 'plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
